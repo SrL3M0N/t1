@@ -5,11 +5,11 @@ digito = digito.ToUpper();
 int contaV = 0;
 int contaA = 0;
 int contaR = 0;
-int ndigito = Convert.ToInt16(digito);
-if (digito == "f" || ndigito < 10 && ndigito > -1)
+
 {
     while (digito != "F")
     {
+        int ndigito = Convert.ToInt16(digito);
 
         if (ndigito < 4)
         {
@@ -32,8 +32,4 @@ if (digito == "f" || ndigito < 10 && ndigito > -1)
 
     }
     Console.WriteLine($"han pasado {contaV} con la pegatina verde, {contaA} con la pegatina Azul y {contaR} con la pegatina Roja");
-}
-else
-{
-    Console.WriteLine("Error al ingresar caracteres no validos, intente en una proxima ocasion");
 }
